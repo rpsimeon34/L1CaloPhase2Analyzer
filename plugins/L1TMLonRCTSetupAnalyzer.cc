@@ -656,7 +656,7 @@ void getEGammaClusters(
 ) {
 
   // If cluster is from SLR other than 0, shift iEta up appropriately
-  int maybe_iEta_offset = SLR*25 - 15;
+  int maybe_iEta_offset = 75 - SLR*25;
   int iEta_offset = std::max(maybe_iEta_offset,0);
   
   RCT_seed_energy->clear();
